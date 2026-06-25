@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sree Manju | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0a0f1f;
+    color:white;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,0.5);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#00e5ff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00e5ff;
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    padding:50px 10%;
+    flex-wrap:wrap;
+}
+
+.profile{
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #00e5ff;
+    box-shadow:0 0 40px #00e5ff;
+}
+
+.hero-content h1{
+    font-size:4rem;
+}
+
+.hero-content span{
+    color:#00e5ff;
+}
+
+.hero-content h2{
+    color:#a855f7;
+    margin:10px 0;
+}
+
+.hero-content p{
+    max-width:600px;
+    color:#d1d5db;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 28px;
+    background:linear-gradient(45deg,#00e5ff,#7c3aed);
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+}
+
+/* Sections */
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    color:#00e5ff;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+.card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 0 15px rgba(0,229,255,0.1);
+}
+
+/* Skills */
+.skills{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skill{
+    background:linear-gradient(45deg,#00e5ff,#7c3aed);
+    padding:12px 25px;
+    border-radius:25px;
+    font-weight:600;
+}
+
+/* Project */
+.project{
+    text-align:center;
+}
+
+.project h3{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#050816;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+.profile{
+    width:250px;
+    height:250px;
+}
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Sree Manju</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+
+    <img src="profile.jpeg"." alt="sree Manju profile photo" class="profile">
+
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Sree Manju</span></h1>
+        <h2>Frontend Developer</h2>
+
+        <p>
+            Final Year B.Tech (AI & DS) Student from
+            Sardar Raja College of Engineering passionate about
+            Frontend Development, Web Technologies and AI Solutions.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+</div>
+
+<!-- About -->
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+<p>
+I am Sree Manju, a Frontend Developer and final-year B.Tech student
+specializing in Artificial Intelligence & Data Science at
+Sardar Raja College of Engineering.
+
+I enjoy creating responsive websites and learning
+new technologies to solve real-world problems.
+</p>
+</div>
+
+</section>
+
+<!-- Education -->
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+<h3>B.Tech - Artificial Intelligence & Data Science</h3>
+<br>
+<p><strong>College:</strong> Sardar Raja College of Engineering</p>
+<p><strong>Status:</strong> Final Year Student</p>
+</div>
+
+</section>
+
+<!-- Skills -->
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">HTML</div>
+<div class="skill">C++</div>
+<div class="skill">Frontend Development</div>
+</div>
+
+</section>
+
+<!-- Project -->
+<section id="project">
+
+<h2 class="title">Final Year Project</h2>
+
+<div class="card project">
+
+<h3>Student Doubt Clear Chatboard</h3>
+
+<p>
+An interactive platform designed to help students ask academic
+questions and receive answers efficiently. The system promotes
+knowledge sharing, collaboration, and academic support.
+</p>
+
+<br>
+
+<h4>Technologies Used</h4>
+
+<p>HTML • Python • Java</p>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="card">
+
+<p><strong>Name:</strong> Sree Manju</p>
+<p><strong>Role:</strong> Frontend Developer</p>
+<p><strong>Email:</strong> your-email@gmail.com</p>
+<p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
+<p><strong>GitHub:</strong> github.com/yourusername</p>
+<p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Sree Manju | Frontend Developer</p>
+</footer>
+
+</body>
+</html>																				<!
